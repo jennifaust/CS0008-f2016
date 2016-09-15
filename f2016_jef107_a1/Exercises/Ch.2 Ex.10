@@ -1,0 +1,30 @@
+# name          : Jenni Faust
+# email         : jef107@pitt.edu
+# date          : 9/8/16
+# class         : CS0008-f2016
+# instructor    : Max Novelli (man8@pitt.edu)
+#
+# Description:
+# A cookie recipe calls for the following ingredients:
+#       - 1.5 cups of sugar
+#       - 1 cup of butter
+#       - 2.75 cups of flour
+# The recipe produces 48 cookies with this amount of the ingredients. Write a program that
+# asks the user how many cookies he or she wants to make, and then displays the number of cups of each
+# ingredient needed for the specified number of cookies.
+# Notes: N/A
+
+# Asking the user how many cookies ze would like to make
+amount_of_cookies = int(input("How many cookies would you like to make?"))
+
+# Calculating amount of ingredients needed
+cups_of_sugar = (amount_of_cookies/48)*1.5
+cups_of_butter = (amount_of_cookies/48)*1
+cups_of_flour = (amount_of_cookies/48)*2.75
+
+# Displaying
+print("The cups of sugar you need for this amount is", cups_of_sugar)
+print("The cups of butter you need for this amount is", cups_of_butter)
+print("The cups of flour you need for this amount is", cups_of_flour)
+
+
