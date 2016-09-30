@@ -17,7 +17,7 @@ system = int(input("Would you like to use USC or the Metric System? Please enter
 # If the user uses USC system
 if system == 1:
 
-# Asking the user for the distance and gasoline
+# Asking the user for the distance and gasoline using USC units
     distance = int(input("How many miles did you drive?"))
     gasoline = int(input("How many gallons of gasoline did you use?"))
 
@@ -67,7 +67,7 @@ Gas Consumption Rating : Excellent
 # If user uses the Metric system
 elif system == 2:
 
-# Asking the user for the distance and gasoline (metric)
+# Asking the user for the distance and gasoline using metric units
     distanceM = int(input("How many kilometers did you drive?"))
     gasolineM = int(input("How many liters of gasoline did you use?"))
 
