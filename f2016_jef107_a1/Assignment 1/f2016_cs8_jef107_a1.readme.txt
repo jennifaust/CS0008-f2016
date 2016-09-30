@@ -1,0 +1,17 @@
+  I first asked the user their preferred system of units and wrote a series of if-else statements based on their response. The user had 
+to either input 1 or 2 for USC or metric system respectively.  I decided to first write the conditions for users who prefer the USC system. 
+If the user entered 1, indicating that their desired system was USC, I then followed with asking them how many miles they drove as well as
+the number of gallons they used. Based on their input, I then converted those numbers to the metric units of kilometers and liters. I then
+calculated the fuel consumption first in USC units and then calculated fuel consumption using metric units, since both the USC and metric
+values of distance and gas are defined at this point. After this, I formatted and printed the information provided that was provided by
+the user and the information calculated with the program. I then wrote a series of nested if statements that defined the ranges of 
+fuel consumption and printed the ratings for each. The fuel consumption rating had to be the last block under the first if statement
+because it is printed last. These are all the blocks under the first if statement for USC users.
+  If the user chose the metric system, they would enter the number 2. This was the elif statement following the first if statement. I then
+repeated all the steps as I did with USC users, except I switched everything for metric users. So instead of asking the user how many miles
+and gallons of gas they used, I instead asked the user how many kilometers and liters of gas they used. Instead of converting from USC to 
+metric, I converted from metric to USC. I then calculated the fuel consumption in USC units and metric units except using the different
+variables that I defined for the distance and gas. Following this, I printed and formatted all the information provided by the user and
+the information calculated by the program. Under the printed and formatted code, I inserted the consumption rating. 
+  For the last line of code, I added an else statement that prompted the user to enter either a 1 or a 2 for USC or metric, since the
+program would not run if either a 1 or 2 was not entered. 
