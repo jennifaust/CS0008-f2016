@@ -1,6 +1,6 @@
 # name          : Jenni Faust
 # email         : jef107@pitt.edu
-# date          : 10/29/16
+# date          : 9/28/16
 # class         : CS0008-f2016
 # instructor    : Max Novelli (man8@pitt.edu)
 #
@@ -80,11 +80,12 @@ while file != "quit" and file !="q" and file !='':
 
 # Make sure we processed some files
 if TotalLines > 0:
-        printKV("\nTotals", '')
-        printKV("Total # of lines", TotalLines, txtlen)
-        printKV("Total distance run", TotalDist, txtlen)
+    printKV("\nTotals", '')
+    printKV("Total # of lines", TotalLines, txtlen)
+    printKV("Total distance run", TotalDist, txtlen)
 else:
-        print("Program terminated without processing any files.")
+    print("Program terminated without processing any files.")
+
 
 
 
