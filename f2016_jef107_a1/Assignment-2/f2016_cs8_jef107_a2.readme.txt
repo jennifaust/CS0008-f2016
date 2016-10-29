@@ -1,1 +1,1 @@
-
+  Writing this program, I wrote the two functions prior to writing the main body of the program. The first function I created was the processFile function which handles the file the user inputs into the system. Since this function returns two values that are "counted, the distance and length values from each file, I defined TempD and TempL as 0 to create an accumulator for these values. The counter starts at 0 and keeps adding all the values as the function reads each line. 
