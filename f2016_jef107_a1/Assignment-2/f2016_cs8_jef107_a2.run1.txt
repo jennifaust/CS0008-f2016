@@ -1,0 +1,18 @@
+/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5 /Users/Jenni/Documents/PycharmProjects/CS0008-f2016/f2016_jef107_a1/Assignment-2/f2016_cs8_jef107_a2.py
+Enter the file name to be read or type quit, q or press the enter key to end.
+
+File to be read: f2016_cs8_a2.data.1.csv
+Partial Total # of lines       :         50
+Partial distance run           :   2298.967
+
+File to be read: f2016_cs8_a2.data.1.csv
+Partial Total # of lines       :         50
+Partial distance run           :   2298.967
+
+File to be read: quit
+
+Totals
+Total # of lines               :        100
+Total distance run             :   4597.933
+
+Process finished with exit code 0

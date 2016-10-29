@@ -1,0 +1,26 @@
+Note: This run just shows that the user can enter extra spaces before the file name, and the file name will still
+be found. This run also shows that if a bad file name is inputted, the system will ask for the user's input again.
+The enter key is used to quit the program instead of the word quit.
+
+
+/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5 /Users/Jenni/Documents/PycharmProjects/CS0008-f2016/f2016_jef107_a1/Assignment-2/f2016_cs8_jef107_a2.py
+Enter the file name to be read or type quit, q or press the enter key to end.
+
+File to be read: f2016_cs8_a2.data.1.csv
+Partial Total # of lines       :         50
+Partial distance run           :   2298.967
+
+File to be read: lkajsdlke
+File [ lkajsdlke ] not found. Please retry.
+
+File to be read:          f2016_cs8_a2.data.2.csv
+Partial Total # of lines       :         50
+Partial distance run           :   2195.061
+
+File to be read:
+
+Totals
+Total # of lines               :        100
+Total distance run             :   4494.027
+
+Process finished with exit code 0
