@@ -59,7 +59,7 @@ file = 'start'
 # TTempL = Total number of lines accrued from all the files entered. TTempD = Total amount of distance accrued from
 # all the files entered into the program. These variables are defined below.
 TotalLines = TotalDist= 0
-txtlen = 30 # What is this?
+txtlen = 30
 
 # The while loop which continues as long as the enter key, quit, or q is not entered by the user.
 while file != "quit" and file !="q" and file !='':
