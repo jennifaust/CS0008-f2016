@@ -1,1 +1,25 @@
-  Writing this program, I wrote the two functions prior to writing the main body of the program. The first function I created was the processFile function which handles the file the user inputs into the system. Since this function returns two values that are "counted, the distance and length values from each file, I defined TempD and TempL as 0 to create an accumulator for these values. The counter starts at 0 and keeps adding all the values as the function reads each line. 
+	I first wrote the two functions required for the main program to run properly. 
+	To write the processFile function, I first defined the function fh and defined the argument that it would pass: infile. I then defined 
+the variables TempD and TempL as 0 so that the accumulator would start at 0. To process the file, I used the open function to open the 
+file in read mode. Following that, I used the for loop to perform a series of statements including: stripping the line of the blank space 
+at the end, splitting the fields, and extracting the distance. After the line is read and the distance is extract, we can then begin using 
+the accumulator to keep track of how many lines were read and the total partial distance of the one file. To count the number of lines in 
+the file, we would use TempL += 1 because we are reading one line at a line each time the loop executes. To count the distance, we use 
+TempD += Dist because we are reading the distance value each time the loop executes. We then can close the file because we are finished 
+processing it.  However, if the user enters an incorrect file name, I used the try/except statement to eliminate bad data from being 
+taken. If a file name that doesn’t exist is inputted, the statements under the except clause executes, telling the user that the file name 
+was not found. The last part of the function uses the return function to return the TempL and TempD values so that they can be used by the 
+main function. 
+	To write the printKV function, I first defined the function printKV and defined the arguments that it would pass including key, value, 
+and an optional klen which defaults to 0 if it is not called. The purpose of the printKV function is to format the output. In the 
+assignment, the “Totals” is the only word without a colon, so in the if statement, I assigned the word colon a blank space. I used the 
+isinstance function to test if the value is a string, integer or float and then defined the formatting. I then used the print function to 
+display the formatting. 
+	Finally, I wrote the main program. At the beginning of the program, I added a print line that gives instructions to the user to type 
+quit, q or press enter to finish. Since I used a while loop for the main program, I initialized the loop by assigning file the string 
+‘start.’ In the while loop, I added a statement that would strip any spaces the user might input by accident, causing the file not to be 
+found. Afterwards, I added an if statement that only executes if the file was found. If the file is found, the printKV function formats 
+the strings, floats and integers and the total number of lines and total distance is also calculated. At the end of the main program, I 
+added another if statement that only executes if a file was processed. If the user decides to quit by accident without processing any 
+files for instance, the program will tell the user that the program terminated without processing any files. 
+
