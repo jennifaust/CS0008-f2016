@@ -1,0 +1,17 @@
+In the main program, the first thing I did was open the master file so that I could extract the file names inside that needed to 
+be processed. I used a for loop to read through and process the three files given inside the master file. Inside of the 
+loop, I used the processFile function to process each of the files inside the master file and extract info such as 
+names, distances, and the total number of times a certain participant appeared in the files altogether. 
+After using the processFile function, I then accumulated the total distance and total lines in all the files.
+
+The next section of the main program pertains to the formatting of the output. 
+The max and the min function were used to find the maximum and minimum distance. 
+Once the distances were determined, their position in the list was determined in order to link these distances back to the name. 
+
+
+In the last section of the program, I created an output file that would add the accumulated total distance of each 
+participant as well as the times they appeared in the files. When the output file was created, the program is designed 
+to see if a name already exist in the list. If the name exists, then the program updates the record with the new accumulated
+distance and count number. If the name doesn’t exist, then the name, distance and count number are all added to the list. Once
+I have all the data accumulated in my memory list, now I can report on the details of the list such as the total distance each 
+person ran as well as the number of times they appeared in the file. 
