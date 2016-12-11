@@ -1,3 +1,10 @@
+#
+# MN: header with user, instructor and course info is missing
+#
+# Notes:
+# MN: avoid at all cost globals
+# 
+
 
 # This function is responsible for processing the file. It opens the file and tests ignores the headers
 # "Name, Distance. If the name is in the list, the function will update the record in all three lists by first
@@ -8,6 +15,8 @@ def processFile(fName):
     file_lines = cnt = 0
     try:
         fh = open(fName, 'r')
+        # MN: you could have counted the lines just by running a counter in the following for loop
+        #     therefore saving some reading from file
         file_lines = len(fh.readlines())
         fh.seek(0)
         for line in fh:
@@ -33,6 +42,7 @@ def processFile(fName):
 
                     # Need to delete the person from all three list in order to
                     # update the record
+                    # MN: you could have just update the position in the list with the new value
                     del name_list[position]
                     del distance_list[position]
                     del count_list[position]
@@ -55,6 +65,8 @@ def processFile(fName):
     return file_distance, file_lines
 
 # Initializing the three lists
+# MN: you are using these 3 variables as globals
+#     DO NOT USE GLOBALS unless it is the only way
 name_list = []
 count_list = []
 distance_list =[]
@@ -63,6 +75,7 @@ distance_list =[]
 # Main Program
 try:
     # Assigning the specified filename to the masterFile variable. Then opening the file in read mode
+    # MN: why not asking the user for the master list file name
     masterFile = "f2016_cs8_a3.data.txt"
     masterListFO = open(masterFile, 'r')
 
@@ -121,7 +134,7 @@ try:
     print("Number of participants")
     print("  with multiple records".ljust(30), ":", format(cnt, '10'))
 
-
+    # MN: I would close the file as soon as I'm done with the reading
     masterListFO.close()
 
 
