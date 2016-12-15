@@ -1,0 +1,15 @@
+# The program runs.
+
+# This program extracts the names and distances from the files listed in the Master file, using the
+# DataFile class. The class contains methods that extract the required data components to properly
+# process the file.
+#
+#
+# The last section of this program creates an output file that adds the accumulated
+# total distance of each participant as well as the times they appeared in the files.
+# If the name of a participant already exists, then the program updates the record
+# with the new accumulated distance and count number. If the name doesn't exist, then
+# the name, distance and count number are all added to the list. After this is done
+# I can now report of the details of the list such as the total distance each
+# person ran as well as the number of times they appeared in the file.
+#
