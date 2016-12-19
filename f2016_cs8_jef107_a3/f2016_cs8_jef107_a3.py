@@ -3,7 +3,7 @@
 #
 # Notes:
 # MN: avoid at all cost globals
-# 
+#
 
 
 # This function is responsible for processing the file. It opens the file and tests ignores the headers
